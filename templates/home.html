@@ -1,0 +1,223 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Gaurav Yadav">
+
+  <title> Gaurav Yadav - Web-Developer</title>
+  <link rel='shortcut icon' href={% static "images/favicon.png" %}/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href={% static "builds/css/main.css" %} rel="stylesheet">
+  <link href={% static "bower_components/magic/magic.min.css" %} rel="stylesheet">
+
+
+  <style>
+
+</style>
+
+</head>
+
+<body id="body">
+
+  <div class="background" id="gradient">
+
+  </div>
+
+  <div class="wrapper">
+    <div class="page">
+      <div class="c_wrapper">
+
+        <div class="col c1">
+          <img class="thumb" width="200" height="200" src="{% static "images/gaurav.jpg" %}">
+          <p class="intro_text_1">Hello, Myself </p>
+          <h2 class="intro_text_2">Gaurav Yadav</h2>
+          <h3 class="intro_text_3">Full-Stack Developer</h3>
+          <span class="email"><i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:gaurav.yadav.cer13@iitbhu.ac.in">gaurav.yadav.cer13@iitbhu.ac.in</a>
+          </span>
+          <span class="contact_icons">
+            <a href="https://www.facebook.com/mailtogy" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=9453888178" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </span>
+
+
+
+<!--                     <div>
+                        <button class="mybtn" data-anijs="if: click, do: boingInUp magictime inline_block, to: #a1">Hire Me</button>
+                      </div> -->
+
+                      <!-- start model-->
+<!--                 <div class="mymodal">
+                    <div class="mymodel_content" id="a1">
+                        <div>
+                            <div class="mymodel_form">
+                                <span class="icon icon-close" data-anijs="if: click, do:, to: #a1">x</span>
+
+                                <form>
+                                    <p><label>Your Email</label><input type="text" /></p>
+                                    <p><label>Message</label><textarea type="textarea"></textarea></p>
+                                    <p><button class="mybtn">Send</button></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div> -->
+                  <!-- /model -->
+
+
+
+                  <div class="skill_wrapper">
+
+                    <h3 class="skills">Skills</h3>
+
+
+                    <h4 class="skill_heading">Front End</h4>
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">Javascript</span>
+                    <span class="skill">JQuery</span>
+                    <span class="skill">Bootstrap</span>
+                    <span class="skill">Materialize</span>
+                    <span class="skill">SVG</span>
+
+                    <h4 class="skill_heading">Back End</h4>
+                    <span class="skill">Python</span>
+                    <span class="skill">Django</span>
+                    <span class="skill">Php</span>
+                    <span class="skill">Codeigniter</span>
+
+                  </div><!-- end skill_wrapper -->
+
+
+                </div><!-- end c1 -->
+
+                <div class="col c2">
+                  <h2 class="ribbon">Portfolio</h2>
+
+
+                  <div class="fullscreen" id="fullscreen">
+                    <div class="info">
+                      <button class="mybtn back_home" id="back">Back to Home</button>
+                      <h3 id="viewer_h3">Keramos</h3><br/>
+                      <p id="viewer_p">Websited made on Php</p>
+                    </div>
+                    <div class="webviewer">
+                     <iframe id="iframe" data-src="http://www.iitbhu.ac.in">
+                     </iframe>
+                   </div>
+                 </div>
+
+
+                 <div class="projects">
+
+                   <div class="project_wrapper">
+                    <div class="project">
+                      <p class="project_title"> Training & Placement Portal, IIT (BHU) </p>
+                      <a target="_blank" href="https://www.placement.iitbhu.ac.in/" class="project_link">
+                        <img class="project_img" src="{% static "images/port1.jpg" %}"/>
+                      </a>
+
+
+                    </div>
+                  </div>
+
+                  <div class="project_wrapper">
+                    <div class="project">
+                      <p class="project_title"> Keramos 2016</p>
+                      <span data-url="{% static "vendors/keramos/index.html" %}" class="project_link" onclick="fullscreen(this);" data-head="Keramos" data-detail="Technology involved: HTML, CSS, JS, SVG, Php">
+                        <img class="project_img" src="{% static "images/port2.jpg" %}"/>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="project_wrapper">
+                    <div class="project">
+                      <p class="project_title"> Spardha 2015</p>
+                      <span data-url="{% static "vendors/spardha/index.html" %}" class="project_link" onclick="fullscreen(this);" data-head="Spardha 2015" data-detail="Technology involved: HTML, CSS, JS and Jquery plugins and Php">
+                        <img class="project_img" src="{% static "images/port3.jpg" %}"/>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="project_wrapper">
+                    <div class="project">
+                      <p class="project_title"> manujagarwal.com</p>
+                      <span data-url="http://manujagarwal.com" class="project_link" onclick="fullscreen(this);" data-head="manujagarwal.com - An architect website" data-detail="Technology involved: HTML, CSS, JS, Google map API">
+                        <img class="project_img" src="{% static "images/port4.jpg" %}"/>
+                      </span>
+                    </div>
+                  </div>
+
+
+                </div><!-- end projects -->
+
+              </div><!-- end c2 -->
+
+
+
+            </div><!-- end c_wrapper -->
+          </div><!-- end page -->
+
+
+
+        </div><!-- end wrapper -->
+
+
+
+
+        <!-- jQuery -->
+        <!-- <script src="{% static "\node_modules/jquery/dist/jquery.js" %}"></script> -->
+        <!-- <script src="{% static "bower_components/AniJS/dist/anijs.js" %}"></script> -->
+        <!-- <script src="{% static "bower_components/AniJS/dist/helpers/dom/anijs-helper-dom-min.js" %}"></script> -->
+
+
+        <script type="text/javascript">
+
+          document.getElementById("back").addEventListener("click", closeFullscreen);
+
+          function closeFullscreen() {
+            document.getElementById("body").style.overflow = "auto";
+            var target = document.getElementById("fullscreen");
+            var iframe = document.getElementById("iframe");
+
+            target.className = "fullscreen magictime swashOut";
+            setTimeout(function (){
+              target.style.display="none";
+            }, 1000);
+
+            setTimeout(function (){
+              iframe.src= "http://127.0.0.1:8000/";
+              document.getElementById("viewer_h3").innerHTML = "";
+              document.getElementById("viewer_p").innerHTML = "";
+            }, 1000);
+
+          };
+
+          function fullscreen(e) {
+            var iframe = document.getElementById("iframe");
+            iframe.src= e.getAttribute("data-url");
+            document.getElementById("viewer_h3").innerHTML = e.getAttribute("data-head");
+            document.getElementById("viewer_p").innerHTML = e.getAttribute("data-detail");
+
+            var target = document.getElementById("fullscreen");
+            target.style.display="block";
+            target.className = "fullscreen magictime swashIn";
+            document.getElementById("body").style.overflow = "hidden";
+          };
+
+        </script>
+
+
+
+
+      </body>
+      </html>
+
+
